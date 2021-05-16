@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body{
+  font-family: Arial;
+  background-color: #F0FFFF;
+  font-size: 15px;
+}
+
+#survey-form{
+  text-align: left;
+  display:block;
+  margin: 30px auto;
+  width: 30%;
+  background: #B6D0E2;
+  padding: 10px 50px;
+  box-shadow: 2px 4px 5px #6F8FAF;
+}
+
+.header{
+  text-align: center;
+}
+
+p{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#name-label, #email-label, #number-label{
+  font-weight: bold;
+}
+
+label{
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.form-control{
+  width: 100%;
+}
+input{
+  font-size: 15px;
+  padding: 3px;
+  margin-right: 10px;
+}
+select{
+  padding: 3px;
+  width: 100%;
+}
+button{
+  margin-top: 10px;
+  padding: 5px;
+  border:none;
+}

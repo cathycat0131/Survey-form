@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Louies Survey Form</title>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Louies Survey Form</h1>
+    <p id="description" class="description text-center">Thank you for taking your time to fill out the survey.</p>
+  </header>
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" class="form-control" placeholder="Enter your name" required id="name"></input>
+    </div>
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input type="email" name="email" class="form-control" placeholder="Enter your email" required id="email"></input>
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Age</label>
+    <input type="number" name="age" id="number" min="17" max="99" class="form-control" placeholder="Age"></input>
+  </div>
+  <div class="form-group">
+    <p>When did you become a fan of Louis?</p>
+    <select id="dropdown" name="time" class="form-control" required>
+       <option disabled selected value>Select a time period</option>
+      <option value="2010">2010-2015</option>
+      <option value="2016">2016-2017</option>
+      <option value="2018">2018-2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+    </select>
+</div>
+
+<div class="form-group">
+  <p>How did you notice Louis Tomlinson?</p>
+  <label><input name="notice" value="Watching X-Factor" type="radio" class="input-radio" checked>Watching X-Factor</input></label>
+<label><input name="notice" value="1D-Days" type="radio" class="input-radio" checked>1D-Days</input></label>
+<label><input name="notice" value="Through radio" type="radio" class="input-radio" checked>Through radio</input></label>
+<label><input name="notice" value="Recommendation in Youtube" type="radio" class="input-radio" checked>Recommendation in Youtube</input></label>
+<label><input name="notice" value="Social Media" type="radio" class="input-radio" checked>Social Media</input></label>
+<label><input name="notice" value="From friends" type="radio" class="input-radio" checked>From friends</input></label>
+</div>
+<div class="form-group">
+  <p>
+        What activities would you like to see more?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+  
+  <label
+        ><input
+          name="prefer"
+          value="Streaming parties"
+          type="checkbox"
+          class="input-checkbox"
+        />Streaming Parties</label
+      >
+  <label
+        ><input
+          name="prefer"
+          value="Livestream parties"
+          type="checkbox"
+          class="input-checkbox"
+        />Livestream Parties</label
+      >
+  <label><input
+          name="prefer"
+          value="Art contest"
+          type="checkbox"
+          class="input-checkbox"
+        />Art Contest</label>
+  <label><input
+          name="prefer"
+          value="Challanges"
+          type="checkbox"
+          class="input-checkbox"
+        />Challanges</label>
+  <label><input
+          name="prefer"
+          value="Twitter Space"
+          type="checkbox"
+          class="input-checkbox"
+        />Twitter Space</label>
+</div>
+  <div class="form-group">
+      <p>Any comments or suggestions?</p>
+    <textarea id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+</div>
+<div class="form-group">
+  <button type="submit" id="submit" class="submit-button">Submit</button>
+</div>
+ </form>
+</div>
+
+</body>
+</html>
